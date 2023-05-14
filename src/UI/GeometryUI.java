@@ -7,6 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
 
 
 public class GeometryUI{
@@ -53,9 +54,16 @@ public class GeometryUI{
             @Override
             public void actionPerformed(ActionEvent e) {
                 float area = geo.areaOfSquare(Float.parseFloat(enterLengthOfSquare.getText()));
+                    try {
+                        FileWriterMain file = new FileWriterMain();
+                        file.writeData("Area of Square" + enterLengthOfSquare.getText() + area);
 
+                    }catch (Exception eme){
+                        JOptionPane.showMessageDialog(null, "Error");
+
+                    }
                 // JOptionPane.showMessageDialog(null,area);
-                fileWriterMain.writeData("Area of Square");
+
                 JOptionPane.showMessageDialog(null,area);
 
 

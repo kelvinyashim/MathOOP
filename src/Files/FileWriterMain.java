@@ -31,7 +31,7 @@ public class FileWriterMain {
     public void writeData(String data){
         try {
             File myFile = new File("test.txt");
-            FileWriter writeToFile = new FileWriter(myFile);
+            FileWriter writeToFile = new FileWriter("myFile.txt");
             writeToFile.write(data);
             writeToFile.append("More Text");
             writeToFile.flush();
