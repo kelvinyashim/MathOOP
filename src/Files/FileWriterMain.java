@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class FileWriterMain {
     public static void main(String[] args){
         FileWriterMain myObj = new FileWriterMain();
-        myObj.writeData("My file");
+        myObj.writeData("JESUS IS KING");
         myObj.readFromFile();
         myObj.appendData("hhahs");
     }
@@ -31,9 +31,9 @@ public class FileWriterMain {
     public void writeData(String data){
         try {
             File myFile = new File("test.txt");
-            FileWriter writeToFile = new FileWriter("myFile.txt");
+            FileWriter writeToFile = new FileWriter(myFile);
             writeToFile.write(data);
-            writeToFile.append("More Text");
+          //  writeToFile.append("More Text");
             writeToFile.flush();
             writeToFile.close();
         }catch (IOException ioException){
@@ -49,7 +49,7 @@ public class FileWriterMain {
             while (myReader.hasNext()){
                 String dataInFile = myReader.nextLine();
                 System.out.println(dataInFile);
-            }
+            }myReader.close();
         } catch (FileNotFoundException e) {
             System.out.println("file does not exist");;
         }

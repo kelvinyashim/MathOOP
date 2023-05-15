@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e523580f-ea88-4701-aaae-c7669b2bea51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myFile.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Files/FileWriterMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Files/FileWriterMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/GeometryUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GeometryUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683928824099</updated>
       <workItem from="1683928825401" duration="2473000" />
-      <workItem from="1684105676950" duration="715000" />
+      <workItem from="1684105676950" duration="3499000" />
     </task>
     <servers />
   </component>
